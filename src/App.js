@@ -2,6 +2,7 @@ import React from "react";
 import Player from "./Components/Player";
 import Song from "./Components/Song";
 import "./styles/App.scss";
+import data from "./util";
 
 function App() {
   return (
