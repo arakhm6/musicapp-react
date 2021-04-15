@@ -2,6 +2,36 @@ import { v4 as uuidv4 } from "uuid";
 function chillHop() {
   return [
     {
+      name: "Flushing the Stairs",
+      cover:
+        "https://chillhop.com/wp-content/uploads/2020/09/6defa6c89a6902fdd84bccd720c2b8fd29c40990-1024x1024.jpg",
+      artist: "Leavv",
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=9916",
+      color: ["#ADB37F", "#95CB76"],
+      id: uuidv4(),
+      active: true,
+    },
+    {
+      name: "After Dark",
+      cover:
+        "https://chillhop.com/wp-content/uploads/2020/07/be9e5dca9d4c9015c407a2d2590af8a0e5e278ce-1024x1024.jpg",
+      artist: "Sugi.wa",
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=3708",
+      color: ["#9EF0CC", "#626C64"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Clockwork",
+      cover:
+        "https://chillhop.com/wp-content/uploads/2020/10/efaa848553d09b4d9fc0752844456e41b34de276-1024x1024.jpg",
+      artist: "Philanthrope, tusken.",
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=1847",
+      color: ["#9381DD", "#38406E"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
       name: "Beaver Creek",
       cover:
         "https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
@@ -9,7 +39,7 @@ function chillHop() {
       audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
       color: ["#205950", "#2ab3bf"],
       id: uuidv4(),
-      active: true,
+      active: false,
     },
     {
       name: "Daylight",
