@@ -12,6 +12,16 @@ function chillHop() {
       active: true,
     },
     {
+      name: "Habitat",
+      cover:
+        "https://chillhop.com/wp-content/uploads/2020/09/2899f7cc22ab12e17d0119819aac3ca9dbab46e6-1024x1024.jpg",
+      artist: "Philanthrope, Kendall Miles",
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=10264",
+      color: ["#CB4A3D", "#AA746B"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
       name: "After Dark",
       cover:
         "https://chillhop.com/wp-content/uploads/2020/07/be9e5dca9d4c9015c407a2d2590af8a0e5e278ce-1024x1024.jpg",
@@ -28,6 +38,16 @@ function chillHop() {
       artist: "Philanthrope, tusken.",
       audio: "https://mp3.chillhop.com/serve.php/?mp3=1847",
       color: ["#9381DD", "#38406E"],
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      name: "Far From Home",
+      cover:
+        "https://chillhop.com/wp-content/uploads/2020/07/ad7fc4dda66ba986466fd2b1c416b0b12411ee28-1024x1024.jpg",
+      artist: "Toonorth",
+      audio: "https://mp3.chillhop.com/serve.php/?mp3=4529",
+      color: ["#303041", "#9DC297"],
       id: uuidv4(),
       active: false,
     },
