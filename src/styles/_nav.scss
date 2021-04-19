@@ -15,4 +15,11 @@ nav {
       color: white;
     }
   }
+  h1 {
+    &:hover {
+      background: white;
+      color: #0fbd74;
+      cursor: pointer;
+    }
+  }
 }
