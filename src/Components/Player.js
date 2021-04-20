@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlay,
   faPause,
-  faForward,
-  faBackward,
   faStepBackward,
   faStepForward,
 } from "@fortawesome/free-solid-svg-icons";
@@ -16,6 +14,8 @@ const Player = ({
   setIsPlaying,
   songInfo,
   setSongInfo,
+  songs,
+  setCurrentSong,
 }) => {
   //Event Handlers
   const playSongHandler = () => {
@@ -32,6 +32,21 @@ const Player = ({
       Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2)
     );
   };
+
+  const skipSongHandler = (direction) => {
+    let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
+    if (direction === "skip-forward") {
+      setCurrentSong(songs[(currentIndex + 1) % songs.length]);
+    }
+    if (direction === "skip-back") {
+      if ((currentIndex - 1) % songs.length === -1) {
+        setCurrentSong(songs[songs.length - 1]);
+        return;
+      }
+      setCurrentSong(songs[(currentIndex - 1) % songs.length]);
+    }
+  };
+
   return (
     <div className="player">
       <div className="time-control">
@@ -46,6 +61,7 @@ const Player = ({
       </div>
       <div className="play-control">
         <FontAwesomeIcon
+          onClick={() => skipSongHandler("skip-back")}
           className="skip-back"
           icon={faStepBackward}
           size="2x"
@@ -57,6 +73,7 @@ const Player = ({
           size="2x"
         />
         <FontAwesomeIcon
+          onClick={() => skipSongHandler("skip-forward")}
           className="skip-forward"
           icon={faStepForward}
           size="2x"
