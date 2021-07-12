@@ -12,7 +12,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
-  "homepage": "https://github.com/arakhm6/musicapp-react.git",
+  "homepage": "https://arakhm6.github.io/musicapp-react/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
